@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 60px;
+}
+
+/* navbar section */
+#navbar.top {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    border: 2px solid gray;
+    background-color: rgb(253, 217, 145);
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 7px 8px;
+}
+
+li a {
+    margin: 12px 35px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    display: block;
+}
+
+#navbar ul li a:hover {
+    color: rgb(255, 0, 0);
+}
+
+#logo img {
+    height: 50px;
+    border-radius: 15px;
+}
+
+/* intro section */
+#introSection {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 100vh;
+    background: url("../static/image/background.jpg") no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#introSection div {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 2.2rem;
+    backdrop-filter: blur(3px);
+}
+
+#introSection div.small {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 1.6rem;
+    
+}
+
+/* mission section */
+#missionSection {
+    
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 60vh;
+    background-color: rgb(255, 228, 230);
+}
+#missionSection h1{
+    text-align: center;
+    color: red;
+    margin: auto;
+    font-size: 2.2rem;
+}
+.card{
+   display: inline-block;
+    width: 30%;
+    height: 60%;
+    border: 2px solid black;
+   margin: 16px 20px;
+   background-color: rgb(255, 215, 215);
+}
+.card-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:darkred;
+}
+.card-img img{
+    height: 150px;
+}
+.card-content p{
+    color: darkred;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+
+}
+/* sponser section */
+#SponserSection {
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 40vh;
+    background: url("../static/image/gulabi.jpg");
+
+}
+#SponserSection {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    font-size: 1.6rem;
+}
+#sponser img{
+    height: 100px;
+    margin: 50px 58px;
+  
+}
+
+/* footer section */
+#FooterSection {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    height: 40px;
+    text-align: center;
+
+
+}

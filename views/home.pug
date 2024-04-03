@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts
+   script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css  
+block content
+    
+      
+
+
+    section#introSection 
+      div Welcome to Taal taarang 
+      div.small Dance is language of soul
+
+    section#missionSection 
+      h1  OUR MISSION
+        div.sliding-background
+      div.card
+           h2  Dance the way you like
+           div.card-box
+            div.card-img
+              img(src="/static/image/dance.PNG")
+            div.card-content
+              p This is best dance academy present till now in whole world 
+      div.card
+           h2  Reach to every state of india
+           div.card-box
+            div.card-img
+              img(src="/static/image/dance2.PNG")
+            div.card-content
+              p This is best dance academy present till now in whole world 
+      div.card
+           h2  Our Students will be best dancer
+           div.card-box
+            div.card-img
+              img(src="/static/image/dance3.PNG")
+            div.card-content
+              p This is best dance academy present till now in whole world 
+
+    section#SponserSection 
+      h1  OUR SPONSER
+      div#sponser
+        img(src="/static/image/splogo1.png", alt="sponser image" class="spimg")
+        img(src="/static/image/splogo2.png", alt="sponser image" class="spimg")
+        img(src="/static/image/splogo3.png", alt="sponser image" class="spimg")
+        img(src="/static/image/splogo4.png", alt="sponser image" class="spimg")

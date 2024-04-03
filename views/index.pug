@@ -1,0 +1,67 @@
+//- index.pug
+doctype html
+html
+  head
+    title Taal Taran
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top
+     
+     ul 
+      div#logo
+             img(src="/static/image/Capture2.PNG")
+            
+
+      li #[a(href="/") Home ]
+      li #[a(href="/") About us ]
+      li #[a(href="/") Dance courses] 
+      li #[a(href="/") Career]
+      li #[a(href="/Resgister") Resgister]
+      
+
+
+    section#introSection 
+      div Welcome to Taal taarang 
+      div.small Dance is language of soul
+
+    section#missionSection 
+      h1  OUR MISSION
+        div.sliding-background
+      div.card
+           h2  Dance the way you like
+           div.card-box
+            div.card-img
+              img(src="/static/image/dance.PNG")
+            div.card-content
+              p This is best dance academy present till now in whole world 
+      div.card
+           h2  Reach to every state of india
+           div.card-box
+            div.card-img
+              img(src="/static/image/dance2.PNG")
+            div.card-content
+              p This is best dance academy present till now in whole world 
+      div.card
+           h2  Our Students will be best dancer
+           div.card-box
+            div.card-img
+              img(src="/static/image/dance3.PNG")
+            div.card-content
+              p This is best dance academy present till now in whole world 
+
+    section#SponserSection 
+      h1  OUR SPONSER
+      div#sponser
+          img(src="/static/image/splogo1.png", alt="sponser image" class="spimg")
+          img(src="/static/image/splogo2.png", alt="sponser image" class="spimg")
+          img(src="/static/image/splogo3.png", alt="sponser image" class="spimg")
+          img(src="/static/image/splogo4.png", alt="sponser image" class="spimg")
+
+
+    section#FooterSection 
+      | Copyrights © 2023 ujjwal kumar gupta |All Rights Are Reserved     
+       
+    
+    script
+      include ../static/index.js    
